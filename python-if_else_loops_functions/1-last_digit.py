@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
-from tkinter import commondialog
 number = random.randint(-10000, 10000)
+# YOUR CODE HERE
 
 str = str(number)
 intero = int(str[-1])
