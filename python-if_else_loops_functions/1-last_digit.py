@@ -2,6 +2,7 @@
 import random
 from tkinter import commondialog
 number = random.randint(-10000, 10000)
+
 str = str(number)
 intero = int(str[-1])
 if intero > 5:
