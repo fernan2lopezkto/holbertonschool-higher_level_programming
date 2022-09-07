@@ -1,3 +1,9 @@
 #!/usr/bin/python3
-for i in range(26):
-    print(chr(ord('a') + i), end="")
+
+begin = ord('a')
+end = ord('z') + 1
+i = begin
+while i != end:
+    caracter = chr(i)
+    print(caracter)
+    i += 1
