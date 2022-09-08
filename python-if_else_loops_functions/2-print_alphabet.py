@@ -1,4 +1,3 @@
-#!/usr/bin/python3
-r = range(97, 123)
-for i in r:
-    print(f"{chr(i)}", end="")
+#!/usr/bin/python3 
+for alph in range(97, 123): 
+	print("{}".format(chr(alph)), end="")
