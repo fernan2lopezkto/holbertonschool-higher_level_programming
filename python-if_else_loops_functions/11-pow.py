@@ -13,7 +13,7 @@ def pow(a, b):
         if b == -2:
             r = r * a
             return 1 / r
-        for i in range(n):
+        for i in range(n - 1):
             r = r * a
         r = 1 / r
 
