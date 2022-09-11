@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from tkinter import N
-
-
 def pow(a, b):
     r = a
     n = b * -1
