@@ -5,7 +5,7 @@ if __name__ == '__main__':
     if argu == 1:
         print("{} arguments.".format(argu - 1))
     elif argu == 2:
-        print("{} argument.".format(argu - 1))
+        print("{} argument:".format(argu - 1))
     else:
         print("{} arguments:".format(argu - 1))
 
