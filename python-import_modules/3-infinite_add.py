@@ -8,3 +8,4 @@ if __name__ == "__main__":
         adding = adding + int(sys.argv[i])
 
     print(f"{adding}")
+    
