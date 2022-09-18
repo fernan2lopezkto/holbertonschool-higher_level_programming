@@ -1,15 +1,6 @@
-#Reduce function
+# pruevas de cosas
 
-from functools import reduce
-list2 =[1,2,3,4,5]
-fins = reduce(lambda x,y:x+y, list2)
-print(fins)
+diC = {'uno': 1, 'dos': 2, 'tres': 3, 'cuatro': 4}
 
-#o/p : 15 
-
-# reduce similar to this concept
-list2 =[1,2,3,4,5]
-adds = 0
-for i in list2:
-    adds+=i
-print(adds)
+a = diC.get("dos")
+print(a)
