@@ -1,0 +1,16 @@
+Módulo 0-add_integer
+=================
+
+Para utilizar la función 'add_integer'
+---------------------------------
+
+La función impar(n) devuelve:
+
+    - la suma de dos integer
+
+
+Primero importamos la función:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Ejemplos de uso:
