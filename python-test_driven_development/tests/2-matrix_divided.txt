@@ -15,12 +15,40 @@ Primero importamos la función:
 
 examples:
 
-    >>> matri = [[1, 2, 3], [4, 5, 6]]
-    >>> m = matrix_divided(matri, 3)
+    >>> matri_1 = [[1, 2, 3], [4, 5, 6]]
+    >>> m = matrix_divided(matri_1, 3)
     >>> m
     [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
-    >>> matri = [[1, 2.5, 3], [4, 5, 6]]
-    >>> m = matrix_divided(matri, 3)
-    >>> m
+
+
+    >>> matri_2 = [[1, 2.5, 3], [4, 5, 6]]
+    >>> n = matrix_divided(matri_2, 3)
+    >>> n
     [[0.33, 0.83, 1.0], [1.33, 1.67, 2.0]]
+
+
+
+    >>> matri_3 = [[1, 3], [4, 5, 6]]
+    >>> p = matrix_divided(matri_3, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: Each row of the matrix must have the same size
+
+
+
+
+    >>> matri_4 = [[1, 2, 3], [4, 5, 6]]
+    >>> o = matrix_divided(matri_4, 0)
+    Traceback (most recent call last):
+        ...
+    ZeroDivisionError: division by zero
+
+
+    
+
+    >>> matri_5 = [[1, 2, 3], [4, 5, 6]]
+    >>> z = matrix_divided(matri_5, "str")
+    Traceback (most recent call last):
+        ...
+    TypeError: div must be a number
