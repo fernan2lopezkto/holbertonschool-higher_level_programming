@@ -31,10 +31,10 @@ Ejemplos de uso:
     Traceback (most recent call last):
         ...
     TypeError: a must be an integer
-    >>> add_integer(0, 9999**99999)
+    >>> add_integer(0, lst[])
     Traceback (most recent call last):
         ...
-    ValueError: Exceeds the limit (4300) for integer string conversion
+    SyntaxError: invalid syntax. Perhaps you forgot a comma?
     >>> add_integer(0, True)
     Traceback (most recent call last):
         ...
