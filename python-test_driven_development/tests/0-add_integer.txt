@@ -31,3 +31,15 @@ Ejemplos de uso:
     Traceback (most recent call last):
         ...
     TypeError: a must be an integer
+    >>> add_integer(0, 9999**99999)
+    Traceback (most recent call last):
+        ...
+    ValueError: Exceeds the limit (4300) for integer string conversion
+    >>> add_integer(0, True)
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    >>> add_integer(True, 0)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
