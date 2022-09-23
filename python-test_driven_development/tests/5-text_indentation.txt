@@ -1,0 +1,30 @@
+test 5-text_indentation
+=================
+
+for use 'text_indentation' function
+---------------------------------
+
+the function have to:
+
+    - print new lines in the lines
+
+
+first, import the function:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+especial characters:
+"." ":" "?"
+
+examples:
+
+
+""" whith special characters """
+>>> text_indentation("hello. world? my friend: ok")
+hello. 
+world?
+>>>
+my friend:
+>>>
+ok
+>>>
