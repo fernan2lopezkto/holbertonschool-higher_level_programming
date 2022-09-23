@@ -20,11 +20,29 @@ examples:
 
 
 """ whith special characters """
->>> text_indentation("hello. world? my friend: ok")
+"""
+>>> text_indentation("hello. world: friend? ok")
 hello. 
-world?
->>>
-my friend:
->>>
+<BLANKLINE>
+world:
+<BLANKLINE>
+friend?
+<BLANKLINE>
 ok
 >>>
+"""
+
+
+""" whith integer value """
+>>> text_indentation(12)
+Traceback (most recent call last):
+    ...
+TypeError: object of type 'int' has no len()
+
+
+
+""" whith empty arguments """
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
