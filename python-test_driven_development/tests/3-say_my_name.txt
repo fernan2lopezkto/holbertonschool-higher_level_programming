@@ -1,0 +1,54 @@
+test 3-say_my_name module
+=================
+
+for use 'say_my_name' function
+---------------------------------
+
+the function return:
+
+    - new list whit 
+
+
+Primero importamos la función:
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+examples:
+
+    """ all good """
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+
+    """ whit only first name """
+
+    >>> say_my_name("Bob")
+    My name is Bob 
+
+
+    """ if only give first name is int"""
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+
+    """ if last name is number """
+    >>> say_my_name("12", 12)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+
+    """ if only a number """
+    >>> say_my_name(12)
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+
+    """ an empty arguments """
+    >>> say_my_name()
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
