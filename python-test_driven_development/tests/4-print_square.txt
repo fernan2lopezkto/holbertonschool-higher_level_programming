@@ -20,4 +20,38 @@ examples:
     ###
     ###
     ###
-    
+
+
+
+    """ if give as an string """
+    >>> print_square("str")
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+
+
+
+    """ if number is float """
+    >>> print_square(4.2)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+
+
+    """ whit empty arguments """
+    >>> print_square()
+    Traceback (most recent call last):
+        ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
+
+
+
+
+    """ whit negative integer """
+    >>> print_square(-3)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
