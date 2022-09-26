@@ -17,7 +17,7 @@ first, import the function:
 examples:
 
 
-""" ok """
+""" whith int """
 
 >>> li = MyList()
 
@@ -36,7 +36,9 @@ examples:
 
 
 
-""" list whith leter """
+
+
+""" list whith str and int """
 
 >>> li = MyList()
 
@@ -54,6 +56,12 @@ Traceback (most recent call last):
     ...
 TypeError: '<' not supported between instances of 'str' and 'int'
 
+
+
+
+
+
+
 """ all str """
 
 >>> li = MyList()
@@ -67,3 +75,30 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 
 >>> li.print_sorted()
 ['a', 'b', 'm']
+
+
+
+
+""" empty list """
+
+>>> li = MyList()
+>>> print(li)
+[]
+>>> li.print_sorted()
+[]
+
+
+
+
+""" return of list sorted """
+>>> li = MyList()
+>>> li.append(1)
+>>> li.append(3)
+>>> li.append(2)
+>>>
+>>> print(li)
+[1, 3, 2]
+>>> a = li.print_sorted()
+[1, 2, 3]
+>>> print(a)
+None
