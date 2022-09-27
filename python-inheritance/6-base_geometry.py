@@ -2,9 +2,6 @@
 """ 5-base_geometry """
 
 
-from logging import exception
-
-
 class BaseGeometry:
     """ BaseGeometry class """
 
