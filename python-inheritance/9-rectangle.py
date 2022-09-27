@@ -2,10 +2,10 @@
 """ Module 9-rectangle """
 
 
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Rectangle(BaseGeometry):
+class Square(Rectangle):
     """ This is a class """
     def __init__(self, width, height):
         self.integer_validator("width", width)
