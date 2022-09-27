@@ -6,6 +6,17 @@ r = Rectangle(3, 5)
 print(r)
 print(dir(r))
 
+print()
+print()
+
+
+
+print(issubclass(Rectangle, BaseGeometry))
+
+
+print()
+print()
+
 try:
     print("Rectangle: {} - {}".format(r.width, r.height))
 except Exception as e:
