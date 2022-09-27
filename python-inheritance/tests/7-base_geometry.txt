@@ -66,15 +66,6 @@ TypeError: BaseGeometry.integer_validator() missing 2 required positional argume
 
 
 
-""" only name """
->>> bg.integer_validator("age")
-Traceback (most recent call last):
-    ...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
-
-
-
-
 
 
 
