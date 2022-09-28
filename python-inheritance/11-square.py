@@ -1,18 +1,18 @@
+
 #!/usr/bin/python3
-""" Module 9-rectangle """
-
-
+"""Module"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """ This is a class """
+    """ square child of rectangle """
+
     def __init__(self, size):
         self.integer_validator("size", size)
-        __size = size
-        super().__init__(size, size)
-        super().area()
+        self.__size = size
 
-    
     def __str__(self):
-        return f"[Square] {self.__widht}/{self.__height}"
+        return f"[Square] {self.__size}/{self.__size}"
+
+    def area(self):
+        return self.__size * self.__size
