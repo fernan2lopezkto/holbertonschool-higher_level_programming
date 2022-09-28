@@ -12,3 +12,4 @@ class Square(Rectangle):
         __size = size
         super().__init__(size, size)
         super().area()
+        super().__str__()
