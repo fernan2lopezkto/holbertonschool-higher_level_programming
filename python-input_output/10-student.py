@@ -14,13 +14,10 @@ class Student:
         """ return self atribut in dinctionary """
         if attrs:
             filt_atrib = {}
-            return self.__dict__.get(attrs)
-
-            """
-            filt_atrib = {}
+            self_atrib = self.__dict__
+            print(self_atrib)
             for itm in attrs:
-                filt_atrib[itm] = self.__dict__.get(itm)
+                filt_atrib[itm] = "a"
             return filt_atrib
-            """
 
         return self.__dict__
