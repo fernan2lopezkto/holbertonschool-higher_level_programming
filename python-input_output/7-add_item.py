@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" script """
+""" module """
 
 
 import sys
