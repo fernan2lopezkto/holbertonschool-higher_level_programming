@@ -1,26 +1,26 @@
 #!/usr/bin/python3
-"""Add item module"""
+"""Add item module"""
 
 
-import sys
+import sys
 
 
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 
-def main():
+def main():
 
-    items_list = []
+    items_list = []
 
     try:
-        items_list = load_from_json_file('add_item.json')
-    except FileNotFoundError:
+        items_list = load_from_json_file('add_item.json')
+    except FileNotFoundError:
         pass
-    for i in range(1, len(sys.argv)):
+    for i in range(1, len(sys.argv)):
         items_list.append(sys.argv[i])
 
-    save_to_json_file(items_list, 'add_item.json')
+    save_to_json_file(items_list, 'add_item.json')
 
-if __name__ == '__main__':
+if __name__ == '__main__':
     main()
