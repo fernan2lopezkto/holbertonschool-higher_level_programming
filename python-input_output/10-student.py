@@ -15,7 +15,7 @@ class Student:
         filt_atrib = {}
         self_atrib = self.__dict__
 
-        if type(attrs) == list:  
+        if type(attrs) == list:
             for itm in attrs:
                 if hasattr(self, itm):
                     filt_atrib[itm] = getattr(self, itm)
