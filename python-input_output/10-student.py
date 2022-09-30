@@ -13,13 +13,12 @@ class Student:
     def to_json(self, attrs=None):
         """ return self atribut in dinctionary """
         filt_atrib = {}
-        if attrs == None:
-            return self.__dict__
-        if attrs:
-            self_atrib = self.__dict__
+        self_atrib = self.__dict__
+
+        if type(attrs) == list:  
             for itm in attrs:
                 if hasattr(self, itm):
                     filt_atrib[itm] = getattr(self, itm)
             return filt_atrib
 
-        return filt_atrib
+        return self_atrib
