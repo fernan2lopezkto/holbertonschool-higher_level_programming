@@ -15,9 +15,9 @@ class Student:
         if attrs:
             filt_atrib = {}
             self_atrib = self.__dict__
-            print(self_atrib)
             for itm in attrs:
-                filt_atrib[itm] = "a"
+                if hasattr(self, itm):
+                    filt_atrib[itm] = getattr(self, itm, "")
             return filt_atrib
 
         return self.__dict__
