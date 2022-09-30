@@ -12,12 +12,14 @@ class Student:
 
     def to_json(self, attrs=None):
         """ return self atribut in dinctionary """
+        filt_atrib = {}
+        if attrs == None:
+            return self.__dict__
         if attrs:
-            filt_atrib = {}
             self_atrib = self.__dict__
             for itm in attrs:
                 if hasattr(self, itm):
                     filt_atrib[itm] = getattr(self, itm)
             return filt_atrib
 
-        return self.__dict__
+        return filt_atrib
