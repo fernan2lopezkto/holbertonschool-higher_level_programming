@@ -17,7 +17,7 @@ class Student:
             self_atrib = self.__dict__
             for itm in attrs:
                 if hasattr(self, itm):
-                    filt_atrib[itm] = getattr(self, itm, "")
+                    filt_atrib[itm] = getattr(self, itm)
             return filt_atrib
 
         return self.__dict__
