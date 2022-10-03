@@ -88,10 +88,10 @@ def type_error(name, value2):
 
 def wh(name, value3):
     """ check value of width and height """
-    if value3 < 0:
+    if value3 <= 0:
         raise ValueError(f"{name} must be > 0")
 
 def xy(name, value4):
     """ check value of x and y """
-    if value4 <= 0:
+    if value4 < 0:
         raise ValueError(f"{name} must be >= 0")
