@@ -75,6 +75,16 @@ class Rectangle(Base):
         xy("y", value)
         self.__y = value
 
+    """
+    -----------=-
+    -- methods --
+    ----------=--
+    """
+    
+    def area(self):
+        """ area calculator """
+        return self.width * self.height
+
 """
 ---------------
 -- to errors --
