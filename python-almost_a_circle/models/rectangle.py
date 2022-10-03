@@ -9,7 +9,7 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ constructor function """
 
-        self.width = width
+        self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
@@ -19,6 +19,12 @@ class Rectangle(Base):
 def width(self):
     """ gett width """
     return self.__width
+
+
+@property
+def height(self):
+    """ gett width """
+    return self.__height
 
 @width.setter
 def width(self, value):
