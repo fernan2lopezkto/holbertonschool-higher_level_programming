@@ -11,7 +11,7 @@ class Base:
 
     def __init__(self, id=None):
         """ class constructor """
-        
+
         if type(id) != int:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
