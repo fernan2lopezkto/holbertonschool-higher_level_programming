@@ -16,7 +16,9 @@ class Rectangle(Base):
         super().__init__(id)
 
     """
+    ---------------
     -- propertis --
+    ---------------
     """
 
     @property
@@ -40,25 +42,42 @@ class Rectangle(Base):
         return self.__y
 
     """
+    ------------
     -- seters --
+    ------------
     """
 
     @width.setter
     def width(self, value):
         """ set width """
+        type_error("width", value)
         self.__width = value
 
     @height.setter
     def height(self, value):
         """ set height """
+        type_error("height", value)
         self.__height = value
 
     @x.setter
     def x(self, value):
         """ set x """
+        type_error("x", value)
         self.__x = value
 
     @y.setter
     def y(self, value):
         """ set y """
+        type_error("y", value)
         self.__y = value
+
+    """ 
+    ---------------
+    -- to errors --
+    ---------------
+    """
+
+    def type_error(name, value2):
+        """ chek type """
+        if type(value2) != int:
+            raise TypeError(f"{name} must be an integer")
