@@ -75,21 +75,24 @@ class Rectangle(Base):
         xy("y", value)
         self.__y = value
 
-""" 
+"""
 ---------------
 -- to errors --
 ---------------
 """
+
 
 def type_error(name, value2):
     """ chek type """
     if type(value2) != int:
         raise TypeError(f"{name} must be an integer")
 
+
 def wh(name, value3):
     """ check value of width and height """
     if value3 <= 0:
         raise ValueError(f"{name} must be > 0")
+
 
 def xy(name, value4):
     """ check value of x and y """
