@@ -16,17 +16,17 @@ class Rectangle(Base):
         super().__init__(id)
 
 @property
-def width(self):
+def get_width(self):
     """ gett width """
     return self.__width
 
 
 @property
-def height(self):
+def get_height(self):
     """ gett width """
     return self.__height
 
-@width.setter
-def width(self, value):
+@get_width.setter
+def set_width(self, value):
     """ set width """
     self.__width = value
