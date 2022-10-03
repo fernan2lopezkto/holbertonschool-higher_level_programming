@@ -20,6 +20,7 @@ def width(self):
     """ gett width """
     return self.__width
 
+@width.setter
 def width(self, value):
     """ set width """
     self.__width = value
