@@ -12,39 +12,32 @@ class Rectangle(Base):
         """ class constructor """
         super().__init__(id)
 
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
-@property
+
 def width(self):
     return __width
 
-@width.setter
 def width(self, value):
     self.__width = value
 
-@property
 def height(self):
     return self.__height
 
-@height.setter
 def height(self, value):
     self.__height = value
 
-@property
 def x(self):
     return __x
 
-@x.setter
 def x(self, value):
     self.__x = value
 
-@property
 def y(self):
     return __y
 
-@y.setter
 def y(self, value):
     self.__y = value
