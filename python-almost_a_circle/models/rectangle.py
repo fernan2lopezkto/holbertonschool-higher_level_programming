@@ -80,7 +80,7 @@ class Rectangle(Base):
     -- methods --
     ----------=--
     """
-    
+
     def area(self):
         """ area calculator """
         return self.width * self.height
