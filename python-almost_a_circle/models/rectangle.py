@@ -9,10 +9,10 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ constructor function """
 
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     """
@@ -77,7 +77,7 @@ class Rectangle(Base):
     ---------------
     """
 
-    def type_error(name, value2):
-        """ chek type """
-        if type(value2) != int:
-            raise TypeError(f"{name} must be an integer")
+def type_error(name, value2):
+    """ chek type """
+    if type(value2) != int:
+        raise TypeError(f"{name} must be an integer")
