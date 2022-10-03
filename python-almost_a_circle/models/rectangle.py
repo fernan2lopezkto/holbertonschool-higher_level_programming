@@ -1,16 +1,13 @@
 #!/usr/bin/python3
-"""
-Rectangle module
-"""
-
-
+"""Module Rectangle"""
 from models.base import Base
 
 
 class Rectangle(Base):
-    """ rectangle class inherits from Base """
+    """Class Rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Constructor"""
         super().__init__(id)
         self.__width = width
         self.__height = height
