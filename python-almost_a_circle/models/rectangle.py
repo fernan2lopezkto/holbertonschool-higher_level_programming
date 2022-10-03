@@ -16,4 +16,5 @@ class Rectangle(Base):
         super().__init__(id)
 
 def width(self, value):
-    self.__width = width
+    """ set width """
+    self.__width = value
