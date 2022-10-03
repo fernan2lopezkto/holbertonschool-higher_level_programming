@@ -21,25 +21,33 @@ class Rectangle(Base):
         self.__y = y
 
 def width(self):
+    """ ok """
     return __width
 
 def width(self, value):
+    """ ok """
     self.__width = value
 
 def height(self):
+    """ ok """
     return self.__height
 
 def height(self, value):
+    """ ok """
     self.__height = value
 
 def x(self):
+    """ ok """
     return __x
 
 def x(self, value):
+    """ ok """
     self.__x = value
 
 def y(self):
+    """ ok """
     return __y
 
 def y(self, value):
+    """ ok """
     self.__y = value
