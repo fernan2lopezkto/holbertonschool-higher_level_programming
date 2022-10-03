@@ -3,6 +3,7 @@
 
 
 from models.base import Base
+"""imported from models/base file"""
 
 
 class Rectangle(Base):
@@ -10,13 +11,14 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ class constructor """
+
         super().__init__(id)
+        """ from super class """
 
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
-
 
 def width(self):
     return __width
