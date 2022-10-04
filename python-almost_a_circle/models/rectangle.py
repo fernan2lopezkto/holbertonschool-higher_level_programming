@@ -99,9 +99,13 @@ class Rectangle(Base):
             return ''
         else:
             string = ''
+            for m in range(0, self.__y):
+                string += '\n'
             for i in range(self.__height):
                 if i > 0:
                     string += '\n'
+                for k in range(0, self.__x):
+                    string += ' '
                 for j in range(self.__width):
                     string += str(self.the_picsel)
             print(string)
