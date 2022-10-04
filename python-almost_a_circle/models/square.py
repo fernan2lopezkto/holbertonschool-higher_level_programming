@@ -16,5 +16,5 @@ class Square(Rectangle):
     def __str__(self):
         """ whow width and heath """
         a = f"[Square] ({self.id}) {self.x}/{self.y}"
-        b = f" - {self.width}/{self.height}"
+        b = f" - {self.width}"
         return a + b
