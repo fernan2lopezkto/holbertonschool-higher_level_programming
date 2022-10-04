@@ -112,7 +112,7 @@ class Rectangle(Base):
 
     def update(self, *args):
         """ update function """
-        item_needed = ["id", "width", "heiht", "x", "y"]
+        item_needed = ["id", "width", "height", "x", "y"]
         for item in range(len(args)):
             setattr(self, item_needed[item], args[item])
 
