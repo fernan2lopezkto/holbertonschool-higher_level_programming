@@ -6,6 +6,8 @@ from models.base import Base
 class Rectangle(Base):
     """ Rectangle class """
 
+    the_picsel = "#"
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """ constructor function """
 
@@ -84,6 +86,19 @@ class Rectangle(Base):
     def area(self):
         """ area calculator """
         return self.width * self.height
+
+    def display(self):
+        """ print rectangle """
+        if self.__width == 0 or self.__height == 0:
+            return ''
+        else:
+            string = ''
+            for i in range(self.__height):
+                if i > 0:
+                    string += '\n'
+                for j in range(self.__width):
+                    string += str(self.the_picsel)
+            print(string)
 
 """
 ---------------
