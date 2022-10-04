@@ -110,11 +110,15 @@ class Rectangle(Base):
                     string += str(self.the_picsel)
             print(string)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ update function """
         item_needed = ["id", "width", "height", "x", "y"]
-        for item in range(len(args)):
-            setattr(self, item_needed[item], args[item])
+        if type(args) == list:
+            for item in range(len(args)):
+                setattr(self, item_needed[item], args[item])
+        else:
+            for key in kwargs:
+                setattr(self, key, kwargs[key])
 
 """
 ---------------
