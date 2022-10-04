@@ -89,7 +89,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """ whow width and heath """
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        a = f"[Rectangle] ({self.id}) {self.x}/{self.y}"
+        b = " - {self.width}/{self.height}"
+        return a + b
 
     def display(self):
         """ print rectangle """
