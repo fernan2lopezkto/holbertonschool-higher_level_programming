@@ -87,6 +87,10 @@ class Rectangle(Base):
         """ area calculator """
         return self.width * self.height
 
+    def __str__(self):
+        """ whow width and heath """
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+
     def display(self):
         """ print rectangle """
         if self.__width == 0 or self.__height == 0:
