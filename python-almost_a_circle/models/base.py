@@ -28,11 +28,17 @@ class Base:
             a = json.dumps(list_dictionaries)
         return a
 
-    def save_to_file(cls, ):
+    def save_to_file(cls, list_objs):
         """ from list to json file
         """
-        with open(f'{self.__class__.__name__}.json', 'w') as outfile:
-            json.dump(letters, outfile)
+        lista = []
+        if list_objs is None:
+            lista = []
+        else:
+            for lis in list_objs:
+                lista.append(lis)
+        with open(f'{cls.__name__}.json', mode='w') as outfile:
+            outfile.write(lista)
 
 
 Base.to_json_string = staticmethod(Base.to_json_string)
