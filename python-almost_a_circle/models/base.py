@@ -27,3 +27,5 @@ class Base:
         else:
             a = json.dumps(list_dictionaries)
         return a
+
+Base.to_json_string = staticmethod(Base.to_json_string)
