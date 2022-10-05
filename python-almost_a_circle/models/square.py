@@ -30,16 +30,20 @@ class Square(Rectangle):
         return a + b
 
     def update(self, *args, **kwargs):
-        """ update function """
-        item_needed = ["id", "size", "x", "y"]
-        if type(args) == list:
-            for item in range(len(args)):
-                if item == 1:
-                    setattr(self, width, args[item])
-                    setattr(self, height, args[item])
-                else:
-                    setattr(self, item_needed[item], args[item])
-                
+        """ update function
+        """
+
+        length = len(args)
+
+        if length > 0:
+            self.id = args[0]
+        if length > 1:
+            self.size = args[1]
+        if length > 2:
+            self.x = args[2]
+        if length > 3:
+            self.y = args[3]
         else:
             for key in kwargs:
                 setattr(self, key, kwargs[key])
+ 
