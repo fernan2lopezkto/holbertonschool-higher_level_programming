@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ rectangle module """
+from multiprocessing.sharedctypes import Value
 from models.base import Base
 
 
@@ -119,6 +120,18 @@ class Rectangle(Base):
         else:
             for key in kwargs:
                 setattr(self, key, kwargs[key])
+
+    def to_dictionary(self):
+        """ return self atribut in dinctionary """
+
+        self_atrib = self.__dict__
+        filt_atrib = {}
+
+        for itm in self_atrib:
+            if hasattr(self, itm):
+                filt_atrib[itm] = getattr(self, itm)
+
+        return filt_atrib
 
 """
 ---------------
