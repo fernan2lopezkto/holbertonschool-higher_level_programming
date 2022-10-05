@@ -45,5 +45,3 @@ class Base:
 
 
 Base.to_json_string = staticmethod(Base.to_json_string)
-
-Base.save_to_file = staticmethod(Base.save_to_file)
