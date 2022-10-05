@@ -85,7 +85,10 @@ class Rectangle(Base):
     """
 
     def area(self):
-        """ area calculator """
+        """
+        The function area() calculates the area of a rectangle
+        :return: The area of the rectangle.
+        """
         return self.width * self.height
 
     def __str__(self):
@@ -123,13 +126,12 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ return self atribut in dinctionary """
-
+        item_needed = ["id", "width", "height", "x", "y"]
         self_atrib = self.__dict__
         filt_atrib = {}
 
-        for itm in self_atrib:
-            if hasattr(self, itm):
-                filt_atrib[itm] = getattr(self, itm)
+        for itm in range(len(self_atrib)):
+            filt_atrib[item_needed[itm]] = getattr(self, item_needed[itm])
 
         return filt_atrib
 
