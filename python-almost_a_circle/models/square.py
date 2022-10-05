@@ -49,11 +49,12 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """ return self atribut in dinctionary """
+
         item_needed = ["id", "size", "x", "y"]
         self_atrib = self.__dict__
         filt_atrib = {}
 
-        for itm in range(len(self_atrib)):
+        for itm in range(4):
             filt_atrib[item_needed[itm]] = getattr(self, item_needed[itm])
 
         return filt_atrib
