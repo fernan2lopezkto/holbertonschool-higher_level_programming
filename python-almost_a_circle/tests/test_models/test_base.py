@@ -9,7 +9,7 @@ class test_bass(unittest.TestCase):
     """
 
     def test_Base(self):
-        a = 1
+        a = Base(5)
         self.assertEqual(a, 1)
 
 if __name__ == '__main__':
