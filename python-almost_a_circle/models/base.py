@@ -3,6 +3,7 @@
 this is a Base class module
 """
 import json
+import os
 from multiprocessing import dummy
 
 
@@ -60,6 +61,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """ dictionary to instance """
+
         if cls.__name__ == "Square":
             dummmy = cls(8)
         if cls.__name__ == "Rectangle":
@@ -68,5 +70,19 @@ class Base:
         dummmy.update(**dictionary)
 
         return dummmy
+
+    @classmethod
+    def load_from_file(cls):
+        """ from file to instance """
+
+        fil = cls.__name__ + ".json"
+
+        if os.path.exists:
+            with open(fil, "r") as f:
+                m = f.read()
+                n = json.loads(m)
+                return n
+        else:
+            return []
 
 Base.to_json_string = staticmethod(Base.to_json_string)
