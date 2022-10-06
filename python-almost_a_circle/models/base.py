@@ -49,7 +49,8 @@ class Base:
         """ loads json string to list """
 
         if json_string is None or len(json_string) == 0:
-            return "[]"
+            ls = []
+            return ls
         else:
             a = json.loads(json_string)
         return a
