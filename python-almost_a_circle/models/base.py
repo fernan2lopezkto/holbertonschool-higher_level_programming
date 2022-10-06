@@ -3,6 +3,7 @@
 this is a Base class module
 """
 import json
+from multiprocessing import dummy
 
 
 class Base:
@@ -46,7 +47,8 @@ class Base:
             return f.write(cls.to_json_string(lis))
 
     def from_json_string(json_string):
-        """ loads json string to list """
+        """ loads json string to list
+        """
 
         if json_string is None or len(json_string) == 0:
             ls = []
@@ -54,5 +56,17 @@ class Base:
         else:
             a = json.loads(json_string)
         return a
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ dictionary to instance """
+        if cls.__name__ == "Square":
+            dummmy = cls(8)
+        if cls.__name__ == "Rectangle":
+            dummmy = cls(8, 8)
+
+        dummmy.update(**dictionary)
+
+        return dummmy
 
 Base.to_json_string = staticmethod(Base.to_json_string)
