@@ -80,7 +80,7 @@ class Base:
         if os.path.exists:
             with open(fil, "r") as f:
                 m = f.read()
-                n = json.loads(m)
+                n = cls.from_json_string(m)
                 return n
         else:
             return []
