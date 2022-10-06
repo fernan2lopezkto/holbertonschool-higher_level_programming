@@ -1,7 +1,7 @@
 #!/usr/bin/python3 
 """ test rectangle module """
 import unittest
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Test_rectangle(unittest.TestCase):
