@@ -4,7 +4,7 @@ import unittest
 from models.base import Base
 
 
-class BaseClass(unittest.TestCase):
+class Test_base(unittest.TestCase):
     """ Base class """
     def test_negative_id(self):
         result = Base(-12)
