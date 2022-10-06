@@ -45,5 +45,13 @@ class Base:
 
             return f.write(cls.to_json_string(lis))
 
+    def from_json_string(json_string):
+        """ loads json string to list """
+
+        if json_string is None or len(json_string) == 0:
+            return "[]"
+        else:
+            a = json.loads(json_string)
+        return a
 
 Base.to_json_string = staticmethod(Base.to_json_string)
