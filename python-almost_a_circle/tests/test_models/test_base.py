@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-""" unitest module """
-
+""" base tests """
 import unittest
 from models.base import Base
 
 
-
-class Test_Base(unittest.TestCase):
+class test_bass(unittest.TestCase):
     """ class for testing
     """
 
