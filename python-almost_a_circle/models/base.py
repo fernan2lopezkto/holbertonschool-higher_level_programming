@@ -5,6 +5,7 @@ this is a Base class module
 import json
 import os
 from multiprocessing import dummy
+from venv import create
 
 
 class Base:
@@ -77,11 +78,15 @@ class Base:
 
         fil = cls.__name__ + ".json"
 
-        if os.path.exists:
+        if os.path.exists(fil):
             with open(fil, "r") as f:
                 m = f.read()
                 n = cls.from_json_string(m)
-                return n
+                asa = []
+                for inst in range(len(n)):
+                    a = n[inst]
+                    asa.append(cls.create(**a))
+                return asa
         else:
             return []
 
