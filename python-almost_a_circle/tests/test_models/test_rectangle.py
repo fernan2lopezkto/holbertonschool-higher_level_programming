@@ -46,6 +46,18 @@ class Test_rectangle(unittest.TestCase):
         r1 = Rectangle(4, 6, 2, 1, 12)
         self.assertEqual(r1.__str__(), "[Rectangle] (12) 2/1 - 4/6")
 
+    def test_display(self):
+        r1 = Rectangle(1, 1, 0, 0)
+        self.assertEqual(r1.display(), None)
+
+    def test_display_2(self):
+        r1 = Rectangle(1, 1, 1, 0)
+        self.assertEqual(r1.display(), None)
+
+    def test_display_3(self):
+        r1 = Rectangle(1, 1, 0, 1)
+        self.assertEqual(r1.display(), None)
+
     """
     whit strings in arguments
     """
