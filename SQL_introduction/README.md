@@ -48,9 +48,9 @@ si la base de datos no existe se puede aregar [IF NOT EXISTS] para evitar que no
 DROP DATABASE IF EXISTS [nombre_de_la_base_de_datos];
 
 - CREATE efectivamente es para crear como en el caso a continuacion una tabla por ejemplo
-<code>
+<pre><code>
 CREATE TABLE IF NOT EXISTS [mombre_de_la_nueva_tabla] (
     id INT, 
     name VARCHAR(256)
 )
-</code>
+</code></pre>
