@@ -1,26 +1,22 @@
 #!/usr/bin/python3
 """ Write a script that lists all states from the database hbtn_0e_0_usa """
 
+
 import MySQLdb
+from sys import argv
 
 
-conn = MySQLdb.connect(host="localhost", port=3306, user="root", passwd="root", db="my_db", charset="utf8")
-""" documentation """
+db = MySQLdb.connect(
+    host="localhost",
+    port=3306,
+    user=argv[1],
+    password=argv[2],
+    database=argv[3]
+    )
 
-cur = conn.cursor()
-""" documentation """
+cursor = db.cursor()
+cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
+result = cursor.fetchall()
 
-cur.execute("SELECT * FROM states ORDER BY id ASC") # HERE I have to know SQL to grab all states in my database
-""" documentation """
-
-query_rows = cur.fetchall()
-""" documentation """
-
-for row in query_rows:
-    """ documentation """
+for row in result:
     print(row)
-    
-cur.close()
-""" documentation """
-conn.close()
-""" documentation """
