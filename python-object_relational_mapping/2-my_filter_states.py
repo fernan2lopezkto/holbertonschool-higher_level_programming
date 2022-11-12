@@ -18,9 +18,8 @@ if __name__ == "__main__":
     name_argument = argv[4]
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name = {} ORDER BY states.id".format(name_argument))
+    cursor.execute("SELECT * FROM states WHERE name = %s ORDER BY states.id")
     result = cursor.fetchall()
 
     for row in result:
-        if row[1][0] == 'N':
-            print(row)
+        print(row)
