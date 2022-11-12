@@ -18,7 +18,7 @@ if __name__ == "__main__":
     name_argument = argv[4]
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name = %s ORDER BY states.id")
+    cursor.execute("SELECT * FROM states WHERE name = {%s} ORDER BY states.id".format(name_argument))
     result = cursor.fetchall()
 
     for row in result:
