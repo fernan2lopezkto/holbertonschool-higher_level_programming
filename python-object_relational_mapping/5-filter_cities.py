@@ -30,5 +30,10 @@ if __name__ == "__main__":
             AND states.name = %s ORDER BY cities.id ASC", (argv[4], ))
     result = cursor.fetchall()
 
+    count = 0
+
     for row in result:
         print(row[0], end="")
+        count += 1
+        if count < len(result):
+            print(end=", ")
