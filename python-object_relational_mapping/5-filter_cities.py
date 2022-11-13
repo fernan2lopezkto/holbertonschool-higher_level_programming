@@ -20,7 +20,7 @@ if __name__ == "__main__":
     select = "SELECT cities.name "
     fromm = "FROM cities "
     iner = "INNER JOIN states "
-    onn = "ON cities.state_id = states.id "
+    onn = "ON cities.state_id = states.id AND states.name = %s", (argv[4], )
     ordr = "ORDER BY cities.id;"
 
     cursor.execute(select + fromm + iner + onn + ordr)
