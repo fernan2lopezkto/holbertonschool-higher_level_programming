@@ -23,10 +23,10 @@ if __name__ == '__main__':
 
     result = session.query(State).filter(
         State.name.like(argv[4])
-    ).order_by(State.id)
+    ).first()
 
     if result:
-        print(result)
+        print(result.id)
     else:
         print("Not found")
 
