@@ -27,4 +27,4 @@ if __name__ == "__main__":
     result = cursor.fetchall()
 
     for row in result:
-        print(row[0], end="")
+        print(row, end="")
