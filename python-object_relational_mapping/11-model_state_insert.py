@@ -31,7 +31,7 @@ if __name__ == '__main__':
     ).first()
 
     if result:
-        print(result.id)
+        print(result)
     else:
         print("Not found")
 
