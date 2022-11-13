@@ -26,7 +26,8 @@ if __name__ == '__main__':
     ).order_by(State.id)
 
     if result:
-        print(f'{result.id}: {result.name}')
+        for item in result:
+            print(f'{item.id}: {item.name}')
     else:
         print("Nothing")
 
