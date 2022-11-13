@@ -23,6 +23,7 @@ if __name__ == '__main__':
 
     result = session.query(State).first()
 
-    print(result)
+    print(f'{result.id}: {result.name}')
+
 
     session.close()
