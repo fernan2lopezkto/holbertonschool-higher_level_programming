@@ -37,3 +37,4 @@ if __name__ == "__main__":
         count += 1
         if count < len(result):
             print(end=", ")
+    print()
