@@ -21,8 +21,10 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    result = session.query(State).all()
+    result = session.query(State).all().filter(
+        State.id == 1
+    )
 
-    print(result[0])
+    print(result)
 
     session.close()
