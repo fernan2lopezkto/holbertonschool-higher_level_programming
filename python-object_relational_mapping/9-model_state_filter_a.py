@@ -22,17 +22,7 @@ if __name__ == '__main__':
     session = Session()
 
     result = session.query(State).filter(
-        State.name.like('%a%')
-    ).filter(
-        State.name.like('a%')
-    ).filter(
         State.name.like('%a')
-    ).filter(
-        State.name.like('%a%a%')
-    ).filter(
-        State.name.like('a%a')
-    ).filter(
-        State.name.like('%a%a')
     ).order_by(State.id)
 
     if result:
