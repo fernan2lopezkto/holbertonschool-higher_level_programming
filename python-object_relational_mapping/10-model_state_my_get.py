@@ -26,8 +26,7 @@ if __name__ == '__main__':
     ).order_by(State.id)
 
     if result:
-        for item in result:
-            print(f'{item.id}: {item.name}')
+        print(result)
     else:
         print("Not found")
 
