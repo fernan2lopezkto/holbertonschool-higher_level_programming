@@ -10,11 +10,10 @@ from sqlalchemy.orm import sessionmaker
 Base = declarative_base()
 
 if __name__ == "__main__":
-    engine = create_engine(
-        'mysql+mysqldb://{}:{}@localhost/{}'.format(argv[1], argv[2],argv[3]),)
-    Base.metadata.create_all(bind=engine)
+    engine = create_engine('postgresql://{}:{}@localhost/{}'.format(argv[1], argv[2],argv[3]),)
+    Base.metadata.create_all(engine)
 
-    Session = sessionmaker(bind=engine)
+    Session = sessionmaker(engine)
     session = Session()
 
     result = session.query(State).all()
