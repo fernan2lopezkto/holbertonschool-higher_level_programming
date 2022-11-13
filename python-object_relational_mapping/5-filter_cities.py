@@ -17,19 +17,13 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    c = "SELECT id FROM cities AS coso WHERE name = {}; ".format(argv[4])
-
-    a = "SELECT name FROM cities WHERE id = COSO;"
-
-    """
     select = "SELECT cities.name "
     fromm = "FROM cities "
     iner = "INNER JOIN states "
-    onn = "ON cities.state_id = states.id "
+    onn = "ON cities.state_id = states.id AND states.name = {} ".format(argv[4])
     ordr = "ORDER BY cities.id;"
-    """
 
-    cursor.execute(c + a)
+    cursor.execute(select + fromm + iner + onn + ordr)
     result = cursor.fetchall()
 
     for row in result:
