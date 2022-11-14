@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """MODULE task 9"""
 
@@ -23,7 +22,7 @@ if __name__ == '__main__':
     session = Session()
 
     result = session.query(State).filter(
-        State.id.like(2))
+        State.id.like(2)).first()
 
     result.name = 'New Mexico'
 
