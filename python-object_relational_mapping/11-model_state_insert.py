@@ -25,11 +25,13 @@ if __name__ == '__main__':
     louisiana.name = "Louisiana"
     session.add(louisiana)
 
-    session.commit()
 
     result = session.query(State).filter(
         State.name.like('Louisiana')
     )
+
+    session.commit()
+
 
     if result:
         print(result.id)
