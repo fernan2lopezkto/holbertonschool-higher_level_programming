@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""MODULE task 9"""
+"""MODULE NAME"""
 
 
 from sqlalchemy import create_engine
@@ -17,12 +17,10 @@ if __name__ == '__main__':
     engine = create_engine(
         f'mysql+mysqldb://{argv[1]}:{argv[2]}@localhost/{argv[3]}')
     Base.metadata.create_all(bind=engine)
-
     Session = sessionmaker(bind=engine)
     session = Session()
-    
-    result = session.query(State).filter(
-        State.name.like('%a%'))
+
+    result = session.query(State).filter(State.name.like('%a%'))
     for item in result:
         session.delete(item)
 
