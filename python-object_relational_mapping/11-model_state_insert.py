@@ -21,13 +21,14 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    louisiana = State(name="Louisiana")
+    louisiana = State()
+    louisiana.name = "Louisiana"
     session.add(louisiana)
 
     session.commit()
 
     result = session.query(State).filter(
-        State.name.like("Louisiana")
+        State.name.like(louisiana.name)
     )
 
     if result:
