@@ -21,7 +21,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
     
-    result = session.query(State).filter(State.name.like('%a%'))
+    result = session.query(State).filter(State.name.like('%a%')).first()
     for item in result:
         session.delete(item)
 
