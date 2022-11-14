@@ -21,19 +21,14 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    louisiana = State()
-    louisiana.name = "Louisiana"
-    session.add(louisiana)
-
+    new_state = State()
+    new_state.name = 'Louisiana'
+    session.add(new_state)
 
     result = session.query(State).filter(
-        State.name.like('Louisiana')
-    )
-
-    if result:
-        print(result.id)
-    else:
-        print("Not found")
+        State.name.like(new_state.name)).first()
+        
+    print(result.id)
 
     session.commit()
     session.close()
