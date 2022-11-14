@@ -28,7 +28,7 @@ if __name__ == '__main__':
     session.commit()
 
     result = session.query(State).filter(
-        State.name.like(louisiana.name)
+        State.name.like('Louisiana')
     )
 
     if result:
