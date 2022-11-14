@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     result = session.query(State).filter(
         State.name.like(new_state.name)).first()
-        
+
     print(result.id)
 
     session.commit()
