@@ -1,9 +1,10 @@
 #!/usr/bin/node
-const frases = 'X';
 if (process.argv[2]) {
   process.argv[2] = parseInt(process.argv[2], 10);
   while (process.argv[2] > 0) {
-    for (let i = 0; i < process.argv[2]; i ++) {
+    let i = 0
+    let eX = ''
+    for (i < process.argv[2]) {
       console.log(frases);
       process.argv[2] = process.argv[2] - 1;
     }
