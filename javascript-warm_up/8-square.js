@@ -5,8 +5,9 @@ if (process.argv[2]) {
     let i = 0
     let eX = ''
     for (i < process.argv[2]) {
-      console.log(frases);
-      process.argv[2] = process.argv[2] - 1;
+      eX = eX + 'X';
+      console.log(ex);
+      i ++;
     }
   }
 } else {
