@@ -9,7 +9,7 @@ if (argums.length > 3) {
   let secbig = 0;
   let i;
   for (i = 2; i < argums.length; i++) {
-    let nume = parseInt(argums[i]);
+    const nume = parseInt(argums[i]);
     if (nume > bigbig && nume > secbig) {
       secbig = bigbig;
       bigbig = nume;
