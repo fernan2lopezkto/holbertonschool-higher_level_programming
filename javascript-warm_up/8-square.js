@@ -1,6 +1,6 @@
 #!/usr/bin/node
 if (process.argv[2]) {
-  if (isNaN(process.argv[2]) {
+  if (isNaN(process.argv[2])) {
     console.log('Missing size');
   } else {
     process.argv[2] = parseInt(process.argv[2], 10);
