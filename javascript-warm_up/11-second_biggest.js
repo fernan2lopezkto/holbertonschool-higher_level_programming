@@ -1,12 +1,13 @@
 #!/usr/bin/node
 
 // variavles
-let argums = process.argv;
+const argums = process.argv;
 
 // there is more of one arguments
 if (argums.length > 3) {
   let bigbig = 0;
   let secbig = 0;
+  let i;
   for (i = 2; i < argums.length; i++) {
     let nume = parseInt(argums[i]);
     if (nume > bigbig && nume > secbig) {
