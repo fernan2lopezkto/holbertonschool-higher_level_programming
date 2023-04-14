@@ -16,7 +16,7 @@ class Square extends Squaretul {
         let j = 0;
         let ast = '';
         while (j < this.width) {
-          ast = ast + 'C';
+          ast = ast + c;
           j++;
         }
         console.log(ast);
