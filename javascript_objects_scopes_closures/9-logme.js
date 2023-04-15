@@ -9,7 +9,7 @@ const list = [];
 
 exports.logMe = function (item) {
   list.push(item);
-  console.log(list.length + ': ' + item);
+  console.log((list.length - 1) + ': ' + item);
 };
 
 // ouput format
