@@ -1,8 +1,6 @@
 # Web Scraping with JS
 
-## tasks
-
-### task 0. readme
+## task 0. readme
 
 Write a script that reads and prints the content of a file.
 
@@ -11,7 +9,7 @@ Write a script that reads and prints the content of a file.
 -If an error occurred during the reading, print the error object
 
 
-### task 1. Write me
+## task 1. Write me
 
 Write a script that writes a string to a file.
 
