@@ -17,8 +17,8 @@ request(url, function (error, response, body) {
             ++count;
           }
         }
-      } 
+      }
+      console.log(count);
     }
   }
-  return console.log(count);
 });
