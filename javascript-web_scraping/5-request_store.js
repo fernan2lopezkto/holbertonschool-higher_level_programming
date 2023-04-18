@@ -10,7 +10,7 @@ request(url, function (error, response, body) {
   if (error) {
     console.log(error);
   } else {
-    fs.writeFile(patch, url, (err) => {
+    fs.writeFile(patch, JSON.parse(body), (err) => {
       if (err) {
         console.log(err);
       }
