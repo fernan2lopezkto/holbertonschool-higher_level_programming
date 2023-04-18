@@ -15,9 +15,10 @@ request(url, function (error, response, body) {
         for (const chars of each.characters) {
           if (chars.endsWith('/18/')) {
             ++count;
-          } 
-        }
-      }
-      return console.log(count);
-}
+          }
+        }
+      } 
+    }
+  }
+  return console.log(count);
 });
