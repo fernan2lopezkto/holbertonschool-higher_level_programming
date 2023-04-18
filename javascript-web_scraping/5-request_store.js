@@ -10,7 +10,7 @@ request(url, function (error, response, body) {
   if (error) {
     console.log(error);
   } else {
-    fs.writeFile(patch, JSON.parse(body), 'utf-8', (err) => {
+    fs.writeFile(patch, body, 'utf-8', (err) => {
       if (err) {
         console.log(err);
       }
