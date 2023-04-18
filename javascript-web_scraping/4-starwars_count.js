@@ -6,9 +6,18 @@ const url = process.argv[2];
 
 request(url, function (error, response, body) {
   if (error) {
-    console.log(error);
+    console.log(error)
   } else {
-    for ()
-    (JSON.parse(body).);
-  }
+    if (response.statusCode === 200) {
+      const data = JSON.parse(body).results;
+      let count = 0;
+      for (const each of data) {
+        for (const chars of each.characters) {
+          if (chars.endsWith('/18/')) {
+            ++count;
+          } 
+        }
+      }
+      return console.log(count);
+}
 });
