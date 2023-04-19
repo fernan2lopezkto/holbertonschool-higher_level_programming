@@ -11,7 +11,7 @@ request(url, function (error, response, body) {
   const page = JSON.parse(body);
   const outlist = {};
   page.forEach(element => {
-    if (page.completed) {
+    if (element.completed) {
       if (outlist[element.userId]) outlist[element.userId] += 1;
       else outlist[element.userId] = 1;
     }
