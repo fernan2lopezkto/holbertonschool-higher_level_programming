@@ -7,15 +7,14 @@ const request = require('request');
 const url = process.argv[2];
 
 request(url, function (error, response, body) {
-    if (error) {
-      console.log(error);
-    } else {
-      const page = JSON.parse(body);
-      const outputs = {}
-      for (const each of page) {
-        if (page.completed === true) {
-          outputs[page.userId] = 
-        }
-      }
+  if (error) return;
+  const page = JSON.parse(body);
+  const outlist = {};
+  page.forEach(element => {
+    if (page.completed) {
+      if (outlist[element.userId]) outlist[element.userId] += 1;
+      else outlist[element.userId] = 1;
     }
   });
+  console.log(outlist);
+});
