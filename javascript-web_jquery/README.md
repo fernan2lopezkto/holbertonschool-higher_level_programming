@@ -101,7 +101,7 @@ Write a JavaScript script that updates the text of the \<header> element to New 
 
 ## Task 7. Star wars character
 
-Write a JavaScript script that fetches the character name from this "URL: https://swapi-api.hbtn.io/api/people/5/?format=json"
+Write a JavaScript script that fetches the character name from this URL: https://swapi-api.hbtn.io/api/people/5/?format=json
 
 - The name must be displayed in the HTML tag DIV#character<br>
 - You can’t use document.querySelector to select the HTML tag<br>
@@ -114,7 +114,7 @@ Write a JavaScript script that fetches the character name from this "URL: https:
 
 ## Task 8. Star Wars movies
 
-Write a JavaScript script that fetches and lists the title for all movies by using this URL: \https://swapi-api.hbtn.io/api/films/?format=json
+Write a JavaScript script that fetches and lists the title for all movies by using this URL: https://swapi-api.hbtn.io/api/films/?format=json
 
 - All movie titles must be list in the HTML tag UL#list_movies<br>
 - You can’t use document.querySelector to select the HTML tag<br>
@@ -126,7 +126,7 @@ Write a JavaScript script that fetches and lists the title for all movies by usi
 
 ## Task 9. Say Hello!
 
-Write a JavaScript script that fetches from \https://stefanbohacek.com/hellosalut/?lang=fr and displays the value of hello from that fetch in the HTML tag DIV#hello.
+Write a JavaScript script that fetches from https://stefanbohacek.com/hellosalut/?lang=fr and displays the value of hello from that fetch in the HTML tag DIV#hello.
 
 - The translation of “hello” must be displayed in the HTML tag DIV#hello<br>
 - You can’t use document.querySelector to select the HTML tag<br>
@@ -136,5 +136,4 @@ Write a JavaScript script that fetches from \https://stefanbohacek.com/hellosalu
 <br>
 <br> 
 <br>
-
 
