@@ -101,7 +101,7 @@ Write a JavaScript script that updates the text of the \<header> element to New 
 
 ## Task 7. Star wars character
 
-Write a JavaScript script that fetches the character name from this URL: \https://swapi-api.hbtn.io/api/people/5/?format=json
+Write a JavaScript script that fetches the character name from this URL: "https://swapi-api.hbtn.io/api/people/5/?format=json"
 
 - The name must be displayed in the HTML tag DIV#character<br>
 - You can’t use document.querySelector to select the HTML tag<br>
