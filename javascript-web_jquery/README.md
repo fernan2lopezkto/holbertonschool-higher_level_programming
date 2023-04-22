@@ -71,3 +71,12 @@ Write a JavaScript script that toggles the class of the <header> element when th
 <br>
 <br>
 
+## Task 5. List of elements
+Write a JavaScript script that adds a \<li> element to a list when the user clicks on the tag DIV#add_item:
+
+- The new element must be: \<li>Item\</li><br>
+- The new element must be added to UL.my_list<br>
+- You can’t use document.querySelector to select the HTML tag<br>
+- You must use the JQuery API
+<br><br><br>
+
