@@ -78,7 +78,9 @@ Write a JavaScript script that adds a \<li> element to a list when the user clic
 - The new element must be added to UL.my_list<br>
 - You can’t use document.querySelector to select the HTML tag<br>
 - You must use the JQuery API
-<br><br><br>
+<br>
+<br>
+<br>
 
 
 
@@ -87,5 +89,16 @@ Write a JavaScript script that updates the text of the \<header> element to New 
 
 - You can’t use document.querySelector to select the HTML tag<br>
 - You must use the JQuery API<br>
-<br><br><br>
+<br>
+<br>
+<br>
 
+## Task 7. Star wars character
+Write a JavaScript script that fetches the character name from this URL: https://swapi-api.hbtn.io/api/people/5/?format=json
+
+The name must be displayed in the HTML tag DIV#character
+- You can’t use document.querySelector to select the HTML tag<br>
+- You must use the JQuery API
+<br>
+<br>
+<br>
